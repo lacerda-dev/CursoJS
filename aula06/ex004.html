@@ -7,20 +7,25 @@
 
     <style>
         body {
+            background-color: rgb(194, 44, 194);
+            color: #fff;
             font-size: 1rem;
             font-family: Arial, Helvetica, sans-serif;
+        }
+        em {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    
+    <h1>Bem-vindo</h1>
 
     <script>
 
         var nome = prompt('Qual é o seu nome?')
-        document.write(`Fala ai, ${nome}! Seu nome tem ${nome.length} letras. <br>`) 
-        document.write(`Seu nome em letras maiúsculas fica<strong> ${nome.toUpperCase()}</strong> <br>`)
-        document.write(`Seu nome em letras minúsculas fica <em>${nome.toLowerCase()}</em>`)
+        document.write(`Fala ai, ${nome}, tudo bem? Seu nome tem ${nome.length} letras. <br>`) 
+        document.write(`Seu nome em letras maiúsculas fica<strong> <em>${nome.toUpperCase()}</em></strong> <br>`)
+        document.write(`E seu nome em letras minúsculas fica <em><strong>${nome.toLowerCase()}</strong></em>`)
 
     </script>
 </body>
