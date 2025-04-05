@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: skyblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1rem;
+        }
+        #spais {
+            margin: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Brasileirice</h1>
+    Qual é o seu país de origem? <input type="text" name="spais" id="spais">
+    <input type="button" value="Enviar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        
+        function verificar() {
+            var pais = document.getElementById('spais').value
+            var res = document.getElementById('res')
+
+            if(pais.toLowerCase() === 'brasil'){
+                res.innerHTML = `<p>Você é <strong>brasileiro</strong> meu parceiro</p>`
+            }else{
+                res.innerHTML = `<p>Você é <strong>gringo</strong>. A agua de coco é R$ 20,00!</p>`
+            }
+            
+
+        }
+
+    </script>
+</body>
+</html>
